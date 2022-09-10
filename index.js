@@ -8,7 +8,7 @@ http
 
     let filePath = `.${request.url}`;
     if (filePath === './') {
-      filePath = './static/index.html';
+      filePath = './index.html';
     }
 
     const extname = String(path.extname(filePath)).toLowerCase();
