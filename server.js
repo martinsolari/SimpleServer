@@ -6,9 +6,9 @@ http
   .createServer((request, response) => {
     console.log(`request ${request.url}`);
 
-    let filePath = `.${request.url}`;
-    if (filePath === './') {
-      filePath = './index.html';
+    let filePath = `./static${request.url}`;
+    if (filePath === './static/') {
+      filePath = './static/index.html';
     }
 
     const extname = String(path.extname(filePath)).toLowerCase();
