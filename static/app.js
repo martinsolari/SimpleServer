@@ -1,14 +1,13 @@
-import Person from "./Person.js";
-console.log("Hello browser");
+import Game from "./Game.js";
 
-const messageElement = document.querySelector("#message");
+const gameElement = document.querySelector("#game");
 const inpName = document.getElementById("name");
 const inpYear = document.getElementById("year");
-const btnAddPerson = document.getElementById("add_person");
+const btnAddGame = document.getElementById("add_game");
 
-btnAddPerson.addEventListener("click", (event) => {
+btnAddGame.addEventListener("click", (event) => {
     event.preventDefault();
-    const aPersonAdded = new Person(inpName.value, inpYear.value);
-    messageElement.textContent = aPersonAdded.introduceSelf();
+    const aGameAdded = new Game(inpName.value, inpYear.value);
+    gameElement.textContent = aGameAdded.toString();
 })
 

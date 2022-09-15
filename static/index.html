@@ -16,10 +16,7 @@
         <label for="tab-montevideo" class="tabs__label">Montevideo</label>
         <div class="tabs__content">
             Capital city of Uruguay.
-            <section>
-                Hello SimpleServer
-                <div id="message"></div>
-            </section>
+            
         </div>
         <input type="radio" class="tabs__radio" name="main-nav" id="tab-tokio">
         <label for="tab-tokio" class="tabs__label">Tokio</label>
@@ -29,17 +26,21 @@
                 <ul>
                     <li>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" required="true" name="person_name">
+                        <input type="text" id="name" required="true" name="game_name">
                     </li>
                     <li>
                         <label for="year">Year:</label>
-                        <input type="number" id="year" min="1900" max="2100" step="1" name="person_year">
+                        <input type="number" id="year" min="1900" max="2100" step="1" name="game_year">
                     </li>
                     <li class="button">
-                        <button type="button" id="add_person">Add person</button>
+                        <button type="button" id="add_game">Add game</button>
                     </li>
                 </ul>
             </form>
+            <section>
+                Game list
+                <div id="game"></div>
+            </section>
         </div>
         <input type="radio" class="tabs__radio" name="main-nav" id="tab-madrid">
         <label for="tab-madrid" class="tabs__label">Madrid</label>
