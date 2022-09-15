@@ -1,5 +1,4 @@
 html {
-    margin: 50px;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
   }
@@ -10,7 +9,6 @@ html {
   }
   
   p, li {
-    font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
   }
@@ -35,11 +33,11 @@ html {
     margin-top: 1em;
   }
   
-  label {
+ label {
     /* Uniform size & alignment */
     display: inline-block;
     width: 90px;
-    text-align: right;
+    text-align: left;
   }
   
   input,
