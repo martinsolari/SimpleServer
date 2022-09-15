@@ -2,6 +2,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
+const port = 8125;
+
 http
   .createServer((request, response) => {
     console.log(`request ${request.url}`);
@@ -51,5 +53,5 @@ http
       }
     });
   })
-  .listen(8125);
-console.log('Server running at http://127.0.0.1:8125/');
+  .listen(port);
+console.log(`Server running at http://localhost:${port}/`);
