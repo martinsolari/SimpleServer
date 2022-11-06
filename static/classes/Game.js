@@ -1,30 +1,30 @@
 export default class Game {
+  static Genre = {
+    Action: 'Action',
+    Adventure: 'Adventure',
+    Strategy: 'Strategy',
+    Simulation: 'Simulation',
+  };
 
-    static Genre = {
-        Action: 'Action',
-        Adventure: 'Adventure',
-        Strategy: 'Strategy',
-        Simulation: 'Simulation'
-      };
+  name;
+  #year;
+  #genre;
 
-    name;
-    #year;
-    #genre;
+  constructor(name, year) {
+    this.name = name;
+    this.#year = year;
+  };
 
-    constructor(name, year) {
-        this.name = name;
-        this.#year = year;
-    };
+  setGenre(genre) {
+    this.genre = genre;
+  };
 
-    setGenre(genre) {
-        this.genre = genre;
-    };
+  getGenre() {
+    return this.genre;
+  };
 
-    getGenre() {
-        return this.genre;
-    };
-
-    toString() {
-        return `${this.name} is a game from ${this.#year} of the ${this.#genre} genre.`;
-    }
+  toString() {
+    return `${this.name} 
+    is a game from ${this.#year} of the ${this.#genre} genre.`;
+  }
 }
