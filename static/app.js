@@ -1,4 +1,5 @@
-import Game from "./Game.js";
+debugger;
+import Game from "./classes/Game.js";
 
 const gameElement = document.querySelector("#game");
 const inpName = document.getElementById("name");
