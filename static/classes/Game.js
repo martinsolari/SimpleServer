@@ -16,8 +16,12 @@ export default class Game {
         this.#year = year;
     };
 
-    setGenere(genere) {
+    setGenre(genre) {
         this.genre = genre;
+    };
+
+    getGenre() {
+        return this.genre;
     };
 
     toString() {
